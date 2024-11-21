@@ -942,13 +942,16 @@
         <div class="col-lg-6">
         </div>
         <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2024 | This Website Modified By <a href="https://www.linkedin.com/in/luqman-hanung-asidiq">Sang Punggux</a><span class="ti-heart fg-theme-blue"></span></p>
+          <p class="text-center mb-0 mt-4">Copyright &copy;<span id="currentYear"></span> | This Website Modified By <a href="https://www.linkedin.com/in/luqman-hanung-asidiq">Sang Punggux</a><span class="ti-heart fg-theme-blue"></span></p>
         </div>
       </div>
     </div>
   </div> <!-- End footer -->
   
-  
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = year;
+  </script>
   <script src="./assets/js/jquery-3.5.1.min.js"></script>
     
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
